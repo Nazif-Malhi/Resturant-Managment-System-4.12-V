@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79992C77-D042-4713-B925-4D5061CFA25E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Spinzer_Managment_System__4._12_V_</RootNamespace>
+    <AssemblyName>Spinzer Managment System %284.12 V%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accesible\Connection.cs" />
+    <Compile Include="ExtraModulesCode\QRCode\QR_Code.cs" />
+    <Compile Include="ExtraModulesCode\RoundRectForms\RoundRectForm.cs" />
+    <Compile Include="Model\CategoriesModel.cs" />
+    <Compile Include="Model\CustomerModel.cs" />
+    <Compile Include="Model\CustomerOrderModel.cs" />
+    <Compile Include="Model\DealsItemModel.cs" />
+    <Compile Include="Model\DealsModel.cs" />
+    <Compile Include="Model\InvoiceModel.cs" />
+    <Compile Include="Model\MaterialsModel.cs" />
+    <Compile Include="Model\OrdersModel.cs" />
+    <Compile Include="Model\Queries\DataTableToListClass.cs" />
+    <Compile Include="Model\ItemsModel.cs" />
+    <Compile Include="Model\Queries\Delete.cs" />
+    <Compile Include="Model\EmployeeModel.cs" />
+    <Compile Include="Model\Queries\Insert.cs" />
+    <Compile Include="Model\Queries\Update.cs" />
+    <Compile Include="Model\StockModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Spinzer Managment System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spinzer Managment System.Designer.cs">
+      <DependentUpon>Spinzer Managment System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\CategoriesViewModel.cs" />
+    <Compile Include="ViewModel\CustomerOrderViewModel.cs" />
+    <Compile Include="ViewModel\CustomerViewModel.cs" />
+    <Compile Include="ViewModel\DealsItemViewModel.cs" />
+    <Compile Include="ViewModel\DealsViewModel.cs" />
+    <Compile Include="ViewModel\EmployeeViewModel.cs" />
+    <Compile Include="ViewModel\InvoiceViewModel.cs" />
+    <Compile Include="ViewModel\ItemViewModel.cs" />
+    <Compile Include="ViewModel\MaterialViewModel.cs" />
+    <Compile Include="ViewModel\OrderViewModel.cs" />
+    <Compile Include="ViewModel\StockViewModel.cs" />
+    <Compile Include="ViewModel\UserViewModel.cs" />
+    <Compile Include="View\Grid\Base\GetCategoryDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetCategoryDataGrid.Designer.cs">
+      <DependentUpon>GetCategoryDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetCustomerDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetCustomerDataGrid.Designer.cs">
+      <DependentUpon>GetCustomerDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetDealDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetDealDataGrid.Designer.cs">
+      <DependentUpon>GetDealDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetEmployeeDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetEmployeeDataGrid.Designer.cs">
+      <DependentUpon>GetEmployeeDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetItemsDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetItemsDataGrid.Designer.cs">
+      <DependentUpon>GetItemsDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetUserDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Base\GetUserDataGrid.Designer.cs">
+      <DependentUpon>GetUserDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowCategory.Designer.cs">
+      <DependentUpon>ShowCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowCustomer.Designer.cs">
+      <DependentUpon>ShowCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowDeals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowDeals.Designer.cs">
+      <DependentUpon>ShowDeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowEmployees.Designer.cs">
+      <DependentUpon>ShowEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowItems.Designer.cs">
+      <DependentUpon>ShowItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Grid\Cards\ShowUsers.Designer.cs">
+      <DependentUpon>ShowUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainControll\Global.cs" />
+    <Compile Include="View\MainControll\Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MainControll\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainControll\Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MainControll\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\Adding Deals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\Adding Deals.Designer.cs">
+      <DependentUpon>Adding Deals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\AddingDiscountsOnItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\AddingDiscountsOnItems.Designer.cs">
+      <DependentUpon>AddingDiscountsOnItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\DailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\DailyReport.Designer.cs">
+      <DependentUpon>DailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\DeletingStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\DeletingStock.Designer.cs">
+      <DependentUpon>DeletingStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\Items.Designer.cs">
+      <DependentUpon>Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\RecentOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\RecentOrder.Designer.cs">
+      <DependentUpon>RecentOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\StockModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\StockModify.Designer.cs">
+      <DependentUpon>StockModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\UpdateQuantitiyFromOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\UpdateQuantitiyFromOrder.Designer.cs">
+      <DependentUpon>UpdateQuantitiyFromOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\UpdatingStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\UpdatingStock.Designer.cs">
+      <DependentUpon>UpdatingStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Small Controlls\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Small Controlls\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StartUp Autherization Controll\ForgetPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\StartUp Autherization Controll\ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StartUp Autherization Controll\LogIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\StartUp Autherization Controll\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StartUp Autherization Controll\SignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\StartUp Autherization Controll\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueAuthenticaition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueAuthenticaition.Designer.cs">
+      <DependentUpon>SubMenueAuthenticaition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueCustomer.Designer.cs">
+      <DependentUpon>SubMenueCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueDeals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueDeals.Designer.cs">
+      <DependentUpon>SubMenueDeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueFood.Designer.cs">
+      <DependentUpon>SubMenueFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SubMenue\SubMenueStock.Designer.cs">
+      <DependentUpon>SubMenueStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControll\StockUserController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControll\StockUserController.Designer.cs">
+      <DependentUpon>StockUserController.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Spinzer Managment System.resx">
+      <DependentUpon>Spinzer Managment System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Grid\Base\GetCategoryDataGrid.resx">
+      <DependentUpon>GetCategoryDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Base\GetCustomerDataGrid.resx">
+      <DependentUpon>GetCustomerDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Base\GetDealDataGrid.resx">
+      <DependentUpon>GetDealDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Base\GetEmployeeDataGrid.resx">
+      <DependentUpon>GetEmployeeDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Base\GetItemsDataGrid.resx">
+      <DependentUpon>GetItemsDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Base\GetUserDataGrid.resx">
+      <DependentUpon>GetUserDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Cards\ShowCategory.resx">
+      <DependentUpon>ShowCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Cards\ShowCustomer.resx">
+      <DependentUpon>ShowCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Cards\ShowDeals.resx">
+      <DependentUpon>ShowDeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Cards\ShowEmployees.resx">
+      <DependentUpon>ShowEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Cards\ShowItems.resx">
+      <DependentUpon>ShowItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Grid\Cards\ShowUsers.resx">
+      <DependentUpon>ShowUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainControll\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainControll\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\Adding Deals.resx">
+      <DependentUpon>Adding Deals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\AddingDiscountsOnItems.resx">
+      <DependentUpon>AddingDiscountsOnItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\DailyReport.resx">
+      <DependentUpon>DailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\DeletingStock.resx">
+      <DependentUpon>DeletingStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\Items.resx">
+      <DependentUpon>Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\RecentOrder.resx">
+      <DependentUpon>RecentOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\StockModify.resx">
+      <DependentUpon>StockModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\UpdateQuantitiyFromOrder.resx">
+      <DependentUpon>UpdateQuantitiyFromOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\UpdatingStock.resx">
+      <DependentUpon>UpdatingStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Small Controlls\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StartUp Autherization Controll\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StartUp Autherization Controll\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StartUp Autherization Controll\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubMenue\SubMenueAuthenticaition.resx">
+      <DependentUpon>SubMenueAuthenticaition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubMenue\SubMenueCustomer.resx">
+      <DependentUpon>SubMenueCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubMenue\SubMenueDeals.resx">
+      <DependentUpon>SubMenueDeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubMenue\SubMenueFood.resx">
+      <DependentUpon>SubMenueFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubMenue\SubMenueStock.resx">
+      <DependentUpon>SubMenueStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControll\StockUserController.resx">
+      <DependentUpon>StockUserController.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\btn_deleteHoverLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\btn_deleteLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\btn_updateHoverLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\btn_UpdateLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Order_UserControllPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainUserControll\AuthenticationForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainUserControll\Customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainUserControll\Food Categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainUserControll\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignIn SignUp\Forgot your password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignIn SignUp\Sign in page remember.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignIn SignUp\Sign in page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignIn SignUp\Sign up page agree condition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignIn SignUp\Sign up page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubMenue\AuthentcationSubMenue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubMenue\CustomerSubMenue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubMenue\FoodSubMenue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\lastOrder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\otherOrders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\recentOrders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\specialCustomer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\btnDataGrid_Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\btnDataGrid_RemoveHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\btnDataGrid_Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components\btnDataGrid_UpdateHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Small Controll\Categorry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Small Controll\Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Small Controll\Employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Small Controll\Items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlls\Small Controll\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExtraModulesCode\MailBody\EmailTemplate.html" />
+    <None Include="Resources\MainUserControll\Stock Managment.png" />
+    <None Include="Resources\Controlls\Small Controll\Adding Deals.png" />
+    <None Include="Resources\Controlls\Small Controll\Deals.png" />
+    <None Include="Resources\SubMenue\DealsSubMenue.png" />
+    <None Include="Resources\MainUserControll\Deals.png" />
+    <None Include="Resources\Components\CloseButton.png" />
+    <None Include="Resources\Controlls\Small Controll\Reports.png" />
+    <None Include="Resources\darkblue.png" />
+    <None Include="Resources\Controlls\Small Controll\DeletingStock.png" />
+    <None Include="Resources\Controlls\Small Controll\UpdatingStock.png" />
+    <None Include="Resources\Controlls\Small Controll\ModifyStock.png" />
+    <None Include="Resources\Controlls\Stock\StockUserControllPic.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockUpdateHover.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockUpdate.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockReportHover.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockReport.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockModifyHover.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockModify.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockDeleteHover.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockDelete.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockCSVHover.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockCSV.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockAddNewHover.png" />
+    <None Include="Resources\Controlls\Stock\btn_StockAddNew.png" />
+    <None Include="Resources\Components\SwitchOnn.png" />
+    <None Include="Resources\Components\SwitchOff.png" />
+    <None Include="Resources\SubMenue\StockSubMenue.png" />
+    <None Include="Resources\Controlls\Small Controll\Stock.png" />
+    <None Include="Resources\Controlls\Small Controll\StockCardPic.png" />
+    <None Include="Resources\Components\ItemCardPic.png" />
+    <None Include="Resources\Components\btnDataGrid_DeleteHover.png" />
+    <None Include="Resources\Components\btnDataGrid_Delete.png" />
+    <None Include="Resources\Controlls\Big Controll\CategoryCardPic.png" />
+    <None Include="Resources\Controlls\Big Controll\CustomerCardPic.png" />
+    <None Include="Resources\Controlls\Big Controll\EmployeeCardPic.png" />
+    <None Include="Resources\Controlls\Big Controll\UserCardPic.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spinzer Managment System (4.12 V)", "Spinzer Managment System (4.12 V)\Spinzer Managment System (4.12 V).csproj", "{79992C77-D042-4713-B925-4D5061CFA25E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Spinzer Managment System 4.12V", "Spinzer Managment System 4.12V\Spinzer Managment System 4.12V.vdproj", "{D0B244AC-F0C0-4E06-BF46-B0B8FA10FCAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79992C77-D042-4713-B925-4D5061CFA25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79992C77-D042-4713-B925-4D5061CFA25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79992C77-D042-4713-B925-4D5061CFA25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79992C77-D042-4713-B925-4D5061CFA25E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B244AC-F0C0-4E06-BF46-B0B8FA10FCAA}.Debug|Any CPU.ActiveCfg = Debug
+		{D0B244AC-F0C0-4E06-BF46-B0B8FA10FCAA}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D657F08-2843-4F27-99DB-25A12CECF96D}
+	EndGlobalSection
+EndGlobal

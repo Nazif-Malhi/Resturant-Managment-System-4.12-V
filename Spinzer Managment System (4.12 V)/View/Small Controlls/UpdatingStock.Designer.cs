@@ -1,0 +1,214 @@
+﻿
+namespace Spinzer_Managment_System__4._12_V_.View.Small_Controlls
+{
+    partial class UpdatingStock
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.name_ComboBox = new System.Windows.Forms.ComboBox();
+            this.save_PictureBox = new System.Windows.Forms.PictureBox();
+            this.cancel_PictureBox = new System.Windows.Forms.PictureBox();
+            this.close_PictureBox = new System.Windows.Forms.PictureBox();
+            this.qtyError_Label = new System.Windows.Forms.Label();
+            this.weightError_Label = new System.Windows.Forms.Label();
+            this.nameErrorlabel = new System.Windows.Forms.Label();
+            this.qty_TextBox = new System.Windows.Forms.TextBox();
+            this.weight_TextBox = new System.Windows.Forms.TextBox();
+            this.price_TextBox = new System.Windows.Forms.TextBox();
+            this.price_ErrorLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.save_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cancel_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_PictureBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // name_ComboBox
+            // 
+            this.name_ComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.name_ComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.name_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.name_ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_ComboBox.FormattingEnabled = true;
+            this.name_ComboBox.Location = new System.Drawing.Point(158, 108);
+            this.name_ComboBox.Name = "name_ComboBox";
+            this.name_ComboBox.Size = new System.Drawing.Size(187, 24);
+            this.name_ComboBox.TabIndex = 43;
+            this.name_ComboBox.SelectedIndexChanged += new System.EventHandler(this.name_ComboBox_SelectedIndexChanged);
+            this.name_ComboBox.TextChanged += new System.EventHandler(this.name_ComboBox_TextChanged);
+            // 
+            // save_PictureBox
+            // 
+            this.save_PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.save_PictureBox.Location = new System.Drawing.Point(50, 295);
+            this.save_PictureBox.Name = "save_PictureBox";
+            this.save_PictureBox.Size = new System.Drawing.Size(123, 33);
+            this.save_PictureBox.TabIndex = 51;
+            this.save_PictureBox.TabStop = false;
+            this.save_PictureBox.Click += new System.EventHandler(this.save_PictureBox_Click);
+            // 
+            // cancel_PictureBox
+            // 
+            this.cancel_PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.cancel_PictureBox.Location = new System.Drawing.Point(226, 295);
+            this.cancel_PictureBox.Name = "cancel_PictureBox";
+            this.cancel_PictureBox.Size = new System.Drawing.Size(123, 33);
+            this.cancel_PictureBox.TabIndex = 50;
+            this.cancel_PictureBox.TabStop = false;
+            this.cancel_PictureBox.Click += new System.EventHandler(this.cancel_PictureBox_Click);
+            // 
+            // close_PictureBox
+            // 
+            this.close_PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.close_PictureBox.Location = new System.Drawing.Point(354, 9);
+            this.close_PictureBox.Name = "close_PictureBox";
+            this.close_PictureBox.Size = new System.Drawing.Size(36, 33);
+            this.close_PictureBox.TabIndex = 49;
+            this.close_PictureBox.TabStop = false;
+            this.close_PictureBox.Click += new System.EventHandler(this.close_PictureBox_Click);
+            // 
+            // qtyError_Label
+            // 
+            this.qtyError_Label.AutoSize = true;
+            this.qtyError_Label.BackColor = System.Drawing.Color.White;
+            this.qtyError_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtyError_Label.ForeColor = System.Drawing.Color.Red;
+            this.qtyError_Label.Location = new System.Drawing.Point(356, 187);
+            this.qtyError_Label.Name = "qtyError_Label";
+            this.qtyError_Label.Size = new System.Drawing.Size(14, 20);
+            this.qtyError_Label.TabIndex = 48;
+            this.qtyError_Label.Text = "!";
+            this.qtyError_Label.Visible = false;
+            // 
+            // weightError_Label
+            // 
+            this.weightError_Label.AutoSize = true;
+            this.weightError_Label.BackColor = System.Drawing.Color.White;
+            this.weightError_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weightError_Label.ForeColor = System.Drawing.Color.Red;
+            this.weightError_Label.Location = new System.Drawing.Point(356, 149);
+            this.weightError_Label.Name = "weightError_Label";
+            this.weightError_Label.Size = new System.Drawing.Size(14, 20);
+            this.weightError_Label.TabIndex = 47;
+            this.weightError_Label.Text = "!";
+            this.weightError_Label.Visible = false;
+            // 
+            // nameErrorlabel
+            // 
+            this.nameErrorlabel.AutoSize = true;
+            this.nameErrorlabel.BackColor = System.Drawing.Color.White;
+            this.nameErrorlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameErrorlabel.ForeColor = System.Drawing.Color.Red;
+            this.nameErrorlabel.Location = new System.Drawing.Point(356, 110);
+            this.nameErrorlabel.Name = "nameErrorlabel";
+            this.nameErrorlabel.Size = new System.Drawing.Size(14, 20);
+            this.nameErrorlabel.TabIndex = 46;
+            this.nameErrorlabel.Text = "!";
+            this.nameErrorlabel.Visible = false;
+            // 
+            // qty_TextBox
+            // 
+            this.qty_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.qty_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qty_TextBox.Location = new System.Drawing.Point(159, 188);
+            this.qty_TextBox.Name = "qty_TextBox";
+            this.qty_TextBox.Size = new System.Drawing.Size(182, 17);
+            this.qty_TextBox.TabIndex = 45;
+            // 
+            // weight_TextBox
+            // 
+            this.weight_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.weight_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weight_TextBox.ForeColor = System.Drawing.Color.Black;
+            this.weight_TextBox.Location = new System.Drawing.Point(159, 150);
+            this.weight_TextBox.Name = "weight_TextBox";
+            this.weight_TextBox.Size = new System.Drawing.Size(182, 17);
+            this.weight_TextBox.TabIndex = 44;
+            // 
+            // price_TextBox
+            // 
+            this.price_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.price_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price_TextBox.Location = new System.Drawing.Point(158, 227);
+            this.price_TextBox.Name = "price_TextBox";
+            this.price_TextBox.Size = new System.Drawing.Size(182, 17);
+            this.price_TextBox.TabIndex = 52;
+            // 
+            // price_ErrorLabel
+            // 
+            this.price_ErrorLabel.AutoSize = true;
+            this.price_ErrorLabel.BackColor = System.Drawing.Color.White;
+            this.price_ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price_ErrorLabel.ForeColor = System.Drawing.Color.Red;
+            this.price_ErrorLabel.Location = new System.Drawing.Point(356, 226);
+            this.price_ErrorLabel.Name = "price_ErrorLabel";
+            this.price_ErrorLabel.Size = new System.Drawing.Size(14, 20);
+            this.price_ErrorLabel.TabIndex = 53;
+            this.price_ErrorLabel.Text = "!";
+            this.price_ErrorLabel.Visible = false;
+            // 
+            // UpdatingStock
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Spinzer_Managment_System__4._12_V_.Properties.Resources.UpdatingStock;
+            this.ClientSize = new System.Drawing.Size(401, 357);
+            this.Controls.Add(this.price_ErrorLabel);
+            this.Controls.Add(this.price_TextBox);
+            this.Controls.Add(this.name_ComboBox);
+            this.Controls.Add(this.save_PictureBox);
+            this.Controls.Add(this.cancel_PictureBox);
+            this.Controls.Add(this.close_PictureBox);
+            this.Controls.Add(this.qtyError_Label);
+            this.Controls.Add(this.weightError_Label);
+            this.Controls.Add(this.nameErrorlabel);
+            this.Controls.Add(this.qty_TextBox);
+            this.Controls.Add(this.weight_TextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "UpdatingStock";
+            this.Text = "UpdatingStock";
+            ((System.ComponentModel.ISupportInitialize)(this.save_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cancel_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_PictureBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ComboBox name_ComboBox;
+        private System.Windows.Forms.PictureBox save_PictureBox;
+        private System.Windows.Forms.PictureBox cancel_PictureBox;
+        private System.Windows.Forms.PictureBox close_PictureBox;
+        private System.Windows.Forms.Label qtyError_Label;
+        private System.Windows.Forms.Label weightError_Label;
+        private System.Windows.Forms.Label nameErrorlabel;
+        private System.Windows.Forms.TextBox qty_TextBox;
+        private System.Windows.Forms.TextBox weight_TextBox;
+        private System.Windows.Forms.TextBox price_TextBox;
+        private System.Windows.Forms.Label price_ErrorLabel;
+    }
+}
